@@ -1,0 +1,56 @@
+name: Bug Report
+description: Bug Report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        *Постарайтесь как можно лаконичнее озаглавить задачу, используя, по возможности, следующий порядок: 
+        **Место**/**Объект**/**Что с ним не так**. 
+        Лучше сделать дополнительные разъяснения в описании, нежели делать длинный заголовок.*
+        ***Пример**: На странице регистрации кнопка "Войти" неверного цвета*
+    
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: "Описание:"
+      description: "Подробно опишите баг. Если имеются предусловия, укажите их здесь же."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: "Шаги вопроизведения:"
+      description: "Какой поряд действий нужно выполнить, чтобы воспроизвести данный баг?"
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+      
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: "Ожидаемый результат:"
+      description: "Что должно произойти после воспроизведения шагов, согласно требованиям?"
+      
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: "Фактический результат:"
+      description: "Что произошло после воспроизведения шагов?"
+     
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Окружение:"
+      description: "Укажите операционную систему, браузер, его версию, разрешение экрана."
+    validations:
+      required: true
+
+  - type: textarea
+    id: add_info
+    attributes:
+      label: "Дополнительная информация:"
+      description: "Здесь можно оставить дополнителный комментарий, а также размесить ссылки, скриншоты, файлы. Удостоверьтесь, что на скриншотах и в файлах нет приватной информации."
